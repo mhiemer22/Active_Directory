@@ -21,3 +21,34 @@ copy-Item .gen_ad.ps1 -ToSession $dc C:\Windows\Tasks\
 .\gen_ad.ps1
 ```
 
+4. ad_schema2.json
+```
+```
+{
+    "domain": "xyz.com",
+
+    "groups" : [
+        {
+           "name": "Employees" 
+        }
+    ],
+
+    "users" : [
+
+        {
+            "name": "Bob Ob",
+            "password": "P@ssword123",
+            "groups": [
+                "Employees"
+            ]
+        },
+        {
+            "name": "Alice Lice",
+            "password": "P@sswordABC",
+            "groups": [
+                "Employees"
+            ]
+        }
+    ]
+}
+```
