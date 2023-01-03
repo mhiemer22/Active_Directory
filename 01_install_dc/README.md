@@ -11,4 +11,14 @@
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 ```
 
+```shell
+get-dnsclientserveraddress
+```
+# use index in next command
+
+```shell
+set-dnsclientserveraddress -interfaceindex 4 -serveraddress 192.168.86.155
+```
+
+
 
