@@ -1,5 +1,16 @@
 # 01 Installing the Domain Controller
 
+GIT COMMANDS
+```shell
+git add .
+```
+```shell
+git commit
+```
+```shell
+git push
+```
+
 1. use 'sconfig' to:
     - change the hostname
     - change the IP address to static
@@ -11,10 +22,10 @@
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 ```
 
+3. Configure DNS IP
 ```shell
 get-dnsclientserveraddress
 ```
-# use index in next command
 
 ```shell
 set-dnsclientserveraddress -interfaceindex 4 -serveraddress 192.168.86.155
