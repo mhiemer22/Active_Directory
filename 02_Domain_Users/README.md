@@ -2,7 +2,7 @@
 
 1. remotely connect to dc
 ```
-$dc = New-PSSession 192.168.86.155 -Credential (Get-Credential)
+$dc = New-PSSession 192.168.86.155 -Credential $creds
 ```
 ```
 enter-pssession $dc
