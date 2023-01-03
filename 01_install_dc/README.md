@@ -31,5 +31,11 @@ get-dnsclientserveraddress
 set-dnsclientserveraddress -interfaceindex 4 -serveraddress 192.168.86.155
 ```
 
+4. Add new workstation to domain
+```
+Add-Computer -DomainName xyz.com -Credential xyz\administrator -Force -Restart
+```
+
+
 
 
